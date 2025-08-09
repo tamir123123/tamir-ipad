@@ -238,4 +238,10 @@ const usersNames = Useres.reduce((usersName,user)=>usersName+=`${user.name} `)
 console.log(usersNames);
 const avglat = Useres.reduce((avg,{address:{geo:{lat}}}) => avg + + lat, 0) / Useres. length;
 console.log(avglat);
-hi tamir
+let northernUsers =[]
+console.log(Useres.reduce((cumulative,user)=>{
+  if(+user.address.geo.lat>0)
+    cumulative.push(user)
+  return cumulative
+
+},[]))
