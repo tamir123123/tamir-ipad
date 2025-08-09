@@ -232,5 +232,5 @@ const Useres=
   }
 ]
 
-const orgUsers = Useres.filter(user => user.email.endsWith('.biz'));
-document.getElementById('body').innerHTML = orgUsers.map
+const orgUsers = Useres.filter(user => user.website.endsWith('.com'));
+document.getElementById('body').innerHTML = orgUsers;
