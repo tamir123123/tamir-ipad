@@ -234,4 +234,7 @@ const Useres=
 
 const orgUsers = Useres.filter(user => user.website.endsWith(`.com`));
 console.log(orgUsers);
-Cons
+const usersNames = Useres.reduce((usersName,user)=>usersName+=`${user.name} `)
+console.log(usersNames);
+const avglat = Useres.reduce((avg,{address:{geo:{lat}}}) => avg + + lat, 0) / Useres. length;
+console.log(avglat);
