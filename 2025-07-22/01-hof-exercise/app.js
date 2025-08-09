@@ -233,4 +233,5 @@ const Useres=
 ]
 
 const orgUsers = Useres.filter(user => user.website.endsWith(`.com`));
-console.log(orgUsers)
+console.log(orgUsers);
+Cons
