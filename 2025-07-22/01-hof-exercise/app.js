@@ -232,5 +232,5 @@ const Useres=
   }
 ]
 
-const orgUsers = Useres.filter(user => user.website.endsWith('.com'));
-document.getElementById('body').innerHTML = orgUsers;
+const orgUsers = Useres.filter(user => user.website.endsWith(`.com`));
+console.log(orgUsers)
